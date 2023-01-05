@@ -1,0 +1,40 @@
+.footer {
+    padding: 10px 0;
+    a ,p{
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        background-image: url(../imgs/Background.jpg);
+        background-size: cover;
+        background-position: center;
+        color: $gray-800;
+        padding: 4px 0;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social-links {
+        margin-bottom: -5px;
+
+        a {
+            padding: 0 8px;
+            font-size: 17px;
+
+            &:after {
+                content: '|';
+                padding-left: 17px;
+                position: relative;
+                top: -1px;
+                opacity: .4;
+            }
+
+            &:first-child {
+                padding: 0;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+}
